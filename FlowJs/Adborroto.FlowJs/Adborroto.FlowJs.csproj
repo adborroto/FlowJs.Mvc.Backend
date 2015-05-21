@@ -40,13 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicFileManager.cs" />
+    <Compile Include="Chunk\ChunkNameGenerator.cs" />
     <Compile Include="Chunk\ChunkStatus.cs" />
-    <Compile Include="Chunk\Parser\ChunkParser.cs" />
-    <Compile Include="Chunk\Parser\IChunkParser.cs" />
+    <Compile Include="Chunk\Binder\ChunkBinder.cs" />
+    <Compile Include="Chunk\Binder\IChunkBinder.cs" />
     <Compile Include="Error\ApplicationError.cs" />
+    <Compile Include="Error\InvalidFileApplicationError.cs" />
     <Compile Include="Error\ParseChunkApplicationError.cs" />
     <Compile Include="Error\UndefinedApplicationError.cs" />
     <Compile Include="FlowManager.cs" />
+    <Compile Include="IChunkNameGenerator.cs" />
+    <Compile Include="IFileManager.cs" />
     <Compile Include="IFlowManager.cs" />
     <Compile Include="Chunk\Chunk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

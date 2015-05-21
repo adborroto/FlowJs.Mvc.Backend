@@ -1,9 +1,9 @@
 ﻿using System.Collections.Specialized;
 using Adborroto.FlowJs.Result;
 
-namespace Adborroto.FlowJs.Chunk.Parser
+namespace Adborroto.FlowJs.Chunk.Binder
 {
-    public interface IChunkParser
+    public interface IChunkBinder
     {
         ValueResult<Chunk> Parse(NameValueCollection collection);
     }
